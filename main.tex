@@ -1,11 +1,11 @@
 \documentclass{moderncv}
 \moderncvstyle{classic}
 
-\usepackage[scale=0.77]{geometry}
+\usepackage[scale=0.86]{geometry}
 
 \name{Joe}{Down}
-\address{Flat 2, 406C, Hackney Road}{E2 7AP, London}{}
-\title{Curriculum Vitae}
+%\address{Flat 2, 406C, Hackney Road}{E2 7AP, London}{}
+\title{}
 \email{joe-down@outlook.com}
 \phone[mobile]{+44~7427~251~937}
 \social[github]{joe-down}
@@ -17,14 +17,16 @@
     \section{Experience}
         \cventry{Jun~2023--Aug~2023}{Associate Data Scientist}{Sky}{London}{}{
             \begin{itemize}
-                \item Trained a tennis event detector based on `Multi-modal Self-Supervision from Generalized Data Transformations'.
+                \item Trained a tennis live-stream event detector based on `Multi-modal Self-Supervision from Generalized Data Transformations'.
+                \item Sorted and extracted appropriate training data from available match footage (serve, rally, foul, etc.).
                 \item Integrated with score detector from previous internship to produce a unified detector with additional optimisations and validation.
             \end{itemize}
         }
         \cventry{Jun~2022--Sep~2022}{Junior Machine Learning Engineer}{Sky}{London}{}{
             \begin{itemize}
-                \item Developed automated score detectors for Premier League football and tennis matches using computer vision and optical character recognition.
-                \item Dockerised to run on an AWS EC2 instance, taking a video live-stream as input and emitting appropriate score change notifications to Amazon SNS.
+                \item Developed automated score detectors for Premier League football and tennis matches using computer vision (OpenCV) and optical character recognition.
+                \item Implemented appropriate Python unit tests.
+                \item Dockerised to run on an AWS EC2 instance, taking a live video stream as input and emitting appropriate event notifications to Amazon SNS.
             \end{itemize}
         }
         \cventry{2019--2020}{Tutor}{Explore Learning}{High Wycombe}{}{
@@ -41,49 +43,47 @@
         %\\\textbf{Year 3:} Computability and Complexity Theory, Computer Systems, Artificial Intelligence and Neural Computing, Computer Graphics, Research Methods, Group Research Project, Machine Learning and Neural Computing, Robotic Systems
         %\\\textbf{Year 4:} Supervised Learning, Applied Machine Learning, Virtual Environments, Multi-agent Artificial Intelligence, Robotic Systems Engineering, Machine Vision, Individual Project
         \begin{itemize}
-            \item\textbf{Optional Modules:}
-            \begin{itemize}
-                \item\textbf{Year 2:} Intelligent Systems
-                \item\textbf{Year 3:} Artificial Intelligence and Neural Computing, Computer Graphics, Machine Learning and Neural Computing, Robotic Systems
-                \item\textbf{Year 4:} Supervised Learning, Applied Machine Learning, Virtual Environments, Multi-agent Artificial Intelligence, Robotic Systems Engineering, Machine Vision
-            \end{itemize}
+            \item\textbf{Optional Modules:} Intelligent Systems, Artificial Intelligence and Neural Computing, Computer Graphics, Machine Learning and Neural Computing, Robotic Systems, Supervised Learning, Applied Machine Learning, Virtual Environments, Multi-agent Artificial Intelligence, Robotic Systems Engineering, Machine Vision
+            %\begin{itemize}
+                %\item\textbf{Year 2:} Intelligent Systems
+                %\item\textbf{Year 3:} Artificial Intelligence and Neural Computing, Computer Graphics, Machine Learning and Neural Computing, Robotic Systems
+                %\item\textbf{Year 4:} Supervised Learning, Applied Machine Learning, Virtual Environments, Multi-agent Artificial Intelligence, Robotic Systems Engineering, Machine Vision
+            %\end{itemize}
             \item\textbf{Key Projects:}
             \begin{itemize}
                 \item\textbf{Year 3 Group Research Project:}
                 \textit{Parameter-Wise Double Descent - A Unified Model or Not?}
                 \begin{itemize}
-                    \item Investigated and questioned the ubiquity of the double descent phenomenon when training a range of neural networks on the MNIST dataset.
+                    \item Investigated and questioned the ubiquity of the double descent phenomenon by training a range of neural networks on the MNIST dataset.
                 \end{itemize}
                 \item\textbf{Year 4 Individual Project:}
                 \textit{WebMGA 3.0.}
                 \begin{itemize}
-                    \item Web tool for 3D interactive visualisation of molecular configurations for liquid crystals.
+                    \item Web tool for interactive 3D visualisation of molecular configurations for liquid crystals.
                     \item Developed using Node.js, React, and three.js.
                 \end{itemize}
-                \item\textbf{Virtual Environments Project:}
+                \item\textbf{Virtual Environments Group Project:}
                 \begin{itemize}
                     \item A tool for teaching and learning sign language using hand tracking in a networked VR environment.
                     \item Developed using Unity for Meta Quest 2 and 3 headsets.
                 \end{itemize}
-                \item\textbf{Multi-agent Artificial Intelligence Project:}
+                \item\textbf{Multi-agent Artificial Intelligence Group Project:}
                 \textit{Identifying how agents behave in the `Warlords' game environment when trained using different multi-agent reinforcement learning techniques. Can interesting behaviours occur or be promoted?}
                 \begin{itemize}
-                    \item Implemented `Deep Q-Learning' and `Multi Agent Deep Deterministic Policy Gradient' algorithms to try to learn behaviours in the 4 player Atari game `Warlords'.
+                    \item Implemented `Deep Q-Learning' and `Multi Agent Deep Deterministic Policy Gradient' algorithms to try to learn behaviours in the 4-player Atari game `Warlords'.
                 \end{itemize}
             \end{itemize}
         \end{itemize}
         }
-        \cventry{2012--2019}{Secondary School}{The Royal Grammar School}{High Wycombe}{}{}
+        %\cventry{2012--2019}{Secondary School}{The Royal Grammar School}{High Wycombe}{}{}
 
     %\section{Projects}
 
     \section{Skills}
-        \cvitem{Programming Languages}{Python, JavaScript/TypeScript, C, C++, C\#, Java, Bash, SQL, Haskell, WebGL, TeX}
+        \cvitem{Programming}{Python, JavaScript/TypeScript, C, C++, C\#, Java, Bash, SQL, Haskell, WebGL, TeX}
+        \cvitem{Frameworks}{PyTorch, TensorFlow, Docker, Unity, Node.js, React, PyQt, Flask, Rospy, OpenCV}
+        \cvitem{Tools}{Git, AWS (ECS, EC2, S3, SageMaker), Jupyter, JetBrains IDEs}
         \cvitem{Systems}{Linux (Arch, Nix, Debian), Arduino, Raspberry Pi, Windows, Meta Quest}
-        \cvitem{Frameworks}{PyTorch, TensorFlow, Docker, Unity, Node.js, React, PyQt, Flask, Rospy, Nashpy, PettingZoo, OpenCV}
-        \cvitem{Tools}{AWS (ECS, EC2, S3, SageMaker), Jupyter, JetBrains IDEs}
-
-    \section{Other}
-        \cvitemwithcomment{Scrum}{Professional Scrum Master I}{Issued Jul 2022}
+        \cvitem{Other}{Professional Scrum Master I}
 
 \end{document}
