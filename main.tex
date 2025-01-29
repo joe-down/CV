@@ -1,7 +1,7 @@
-\documentclass{moderncv}
+\documentclass[10pt]{moderncv}
 \moderncvstyle{classic}
 
-\usepackage[scale=0.86]{geometry}
+\usepackage[scale=0.9]{geometry}
 
 \name{Joe}{Down}
 %\address{Flat 2, 406C, Hackney Road}{E2 7AP, London}{}
@@ -13,6 +13,7 @@
 
 \begin{document}
     \makecvtitle
+    \vspace{-3em}
 
     \section{Experience}
         \cventry{Jun~2023--Aug~2023}{Software Engineering Intern}{Sky}{London}{}{
@@ -56,34 +57,56 @@
                 \begin{itemize}
                     \item Investigated and questioned the ubiquity of the double descent phenomenon by training a range of neural networks on the MNIST dataset.
                 \end{itemize}
-                \item\textbf{Year 4 Individual Project:}
+                \item\textbf{\href{https://joe-down.github.io/WebMGA-3/}{\faLink\ Year 4 Individual Project:}}
                 \textit{WebMGA 3.0.}
                 \begin{itemize}
                     \item Web tool for interactive 3D visualisation of molecular configurations for liquid crystals.
                     \item Developed using Node.js, React, and three.js.
+                    \item \href{https://github.com/joe-down/WebMGA-3}{\faGithub\ GitHub}, \href{https://joe-down.github.io/Final-Year-Project-Dissertation/main.pdf}{\faLink\ Dissertation}
                 \end{itemize}
                 \item\textbf{Virtual Environments Group Project:}
                 \begin{itemize}
                     \item A tool for teaching and learning sign language using hand tracking in a networked VR environment.
                     \item Developed using Unity for Meta Quest 2 and 3 headsets.
                 \end{itemize}
-                \item\textbf{Multi-agent Artificial Intelligence Group Project:}
-                \textit{Identifying how agents behave in the `Warlords' game environment when trained using different multi-agent reinforcement learning techniques. Can interesting behaviours occur or be promoted?}
+                \item\textbf{\href{https://github.com/COMP0124-Group-9/Deep-Q-Learning-for-Atari-Warlords}{\faGithub\ Multi-agent Artificial Intelligence Group Project:}}
+                \textit{Identifying how agents behave in the `Warlords' game environment when trained using multi-agent reinforcement learning.}
                 \begin{itemize}
-                    \item Implemented `Deep Q-Learning' and `Multi Agent Deep Deterministic Policy Gradient' algorithms to try to learn behaviours in the 4-player Atari game `Warlords'.
+                    \item Implemented the `Deep Q-Learning'' algorithm to try to learn behaviours in the 4-player Atari game `Warlords'.
                 \end{itemize}
+                \item\textbf{\href{https://joe-down.github.io/Double-Descent-Review/review.pdf}{\faLink\ Double Descent Literature Review}}
+                \item\textbf{\href{https://joe-down.github.io/Foveated-Rendering-Review/main.pdf}{\faLink\ Foveated Rendering Literature Review}}
             \end{itemize}
         \end{itemize}
         }
-        %\cventry{2012--2019}{Secondary School}{The Royal Grammar School}{High Wycombe}{}{}
-
-    %\section{Projects}
-
+        \cventry{2012--2019}{Secondary School}{The Royal Grammar School}{High Wycombe}{}{
+        \begin{itemize}
+         \item\textbf{A-Level:} Maths: A*, Computer Science: A*, Further Maths: A, Physics: B
+         \item\textbf{GCSE:} 9, 9, 9, A*, A*, A*, A*, A, A, A, A, A
+        \end{itemize}
+}
+    \section{Projects}
+        \begin{itemize}
+            \item\textbf{\href{https://github.com/joe-down/Deep-Deterministic-Policy-Gradient}{\faGithub\ Deep Deterministic Policy Gradient Implementation:}}
+                \begin{itemize}
+                    \item Implemented an algorithm based on `Deep Deterministic Policy Gradient (DDPG)' for a range of gymnasium environments.
+                \end{itemize}
+        \end{itemize}
+                \begin{itemize}
+            \item\textbf{\href{https://github.com/joe-down/NixOS-config}{\faGithub\ NixOS:}}
+                \begin{itemize}
+                    \item Using NixOS as my primary OS since April 2024. My configuration can be found at the GitHub repo linked.
+                \end{itemize}
+                            \item\textbf{\href{https://github.com/joe-down/A-Level-Coursework}{\faGithub\ A-Level Maths Quiz:}}
+                \begin{itemize}
+                    \item Implemented an A-Level maths quiz platform with automated question generation for my A-Level Computer Science coursework.
+                \end{itemize}
+        \end{itemize}
     \section{Skills}
         \cvitem{Programming}{Python, JavaScript/TypeScript, C, C++, C\#, Java, Bash, SQL, Haskell, WebGL, TeX}
         \cvitem{Frameworks}{PyTorch, TensorFlow, Docker, Unity, Node.js, React, PyQt, Flask, Rospy, OpenCV}
         \cvitem{Tools}{Git, AWS (ECS, EC2, S3, SageMaker), Jupyter, JetBrains IDEs}
         \cvitem{Systems}{Linux (Arch, Nix, Debian), Arduino, Raspberry Pi, Windows, Meta Quest}
-        \cvitem{Other}{Professional Scrum Master I}
+        \cvitem{Other}{\href{https://www.scrum.org/certificates/820521}{\faLink\ Professional Scrum Master I}}
 
 \end{document}
